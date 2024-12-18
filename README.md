@@ -1,0 +1,2 @@
+# EconomicMathematicsSeminar
+経済数学ゼミ用のレポジトリ
