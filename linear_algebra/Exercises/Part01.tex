@@ -22,19 +22,6 @@
 \date{\today}
 
 % 問題用のスタイル定義
-%% 青ベース
-\begin{comment}
-\newtcolorbox{problem}[1][]{
-  colframe=blue!60,      % 外枠の色
-  colback=blue!5,        % 背景色
-  coltitle=black,        % タイトルの色
-  sharp corners,         % 角をシャープに
-  boxrule=0.8pt,         % 枠線の太さ
-  title=#1
-}
-\end{comment}
-
-% グレーベース
 \newtcolorbox{problem}[1][]{
   colframe=gray!80,       % 外枠: ダークグレー
   colback=gray!20,        % 背景: ライトグレー
@@ -43,42 +30,6 @@
   sharp corners,
   title=#1
 }
-
-% オレンジベース
-\begin{comment}
-\newtcolorbox{problem}[1][]{
-  colframe=red!60!brown,   % 外枠: テラコッタ風
-  colback=yellow!10!white, % 背景: アイボリー調
-  coltitle=red!60!brown,   % タイトル: テラコッタ風
-  boxrule=1pt,             
-  sharp corners,
-  title=#1
-}
-\end{comment}
-
-% ベイビーブルーベース
-\begin{comment}
-\newtcolorbox{problem}[1][]{
-  colframe=blue!80!black,  % 外枠: ネイビー
-  colback=blue!5,          % 背景: 薄いブルー
-  coltitle=blue!80!black,  % タイトル: ネイビー
-  boxrule=1pt,
-  sharp corners,
-  title=#1
-}
-\end{comment}
-
-% 緑ベース
-\begin{comment}
-\newtcolorbox{problem}[1][]{
-  colframe=green!60!black, % 外枠: エメラルドグリーン
-  colback=green!5!white,   % 背景: ペールグリーン
-  coltitle=green!60!black, % タイトル: エメラルドグリーン
-  boxrule=0.8pt,
-  sharp corners,
-  title=#1
-}
-\end{comment}
 
 % 解答スタイルの定義
 \newenvironment{solution}{
@@ -89,7 +40,11 @@
 
 \maketitle
 
+% 目次を追加
+\tableofcontents
+\newpage % 目次の後に改ページ
 
+\section{Problem 1.1}
 \begin{problem}[Prob1.1]
 行列$X, Y$が同サイズで積$XY$が定義できるとする。  
 $(XY)^T = Y^T X^T$であることを示せ。
@@ -111,6 +66,7 @@ $XY$の$(i,j)$成分を$(XY)_{ij}$とする。このとき、
 よって$(XY)^T = Y^T X^T$が示された。
 \end{solution}
 
+\section{Problem 1.2}
 \begin{problem}[Prob1.2]
 行列$X, Y, Z$が適切なサイズで積$XYZ$が定義できるとする。  
 $(XYZ)^T = Z^T Y^T X^T$であることを示せ。
@@ -131,6 +87,7 @@ $(1)$の結果を二度適用することで示す。
 \]
 \end{solution}
 
+\section{Problem 1.3}
 \begin{problem}[Prob1.3]
 $n \times n$行列$A$が可逆であるとき、$A^T$も可逆であり、$(A^T)^{-1} = (A^{-1})^T$であることを示せ。
 \end{problem}
